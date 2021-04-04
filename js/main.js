@@ -226,30 +226,12 @@ $(document).ready(function() {
         $(".overlay-box2").fadeOut(500);
     });
 
-    if ($(window).width() <= 991) {
-        $(".lang-name").click(function() {
-            $(this).addClass("rotate")
-            $(".overlay-box3").fadeIn();
-            $(".mo-nav .lang-list").slideDown(300);
-        });
-        $(".overlay-box3").click(function() {
-            $(".lang-name").removeClass("rotate")
-            $(".overlay-box3").fadeOut();
-            $(".mo-nav .lang-list").slideUp(300);
-        });
-    }
-    if ($(window).width() <= 991) {
-        $(".currency-name").click(function() {
-            $(this).addClass("rotate")
-            $(".overlay-box3").fadeIn();
-            $(".mo-nav .currency-list").slideDown(300);
-        });
-        $(".overlay-box3").click(function() {
-            $(".currency-name").removeClass("rotate")
-            $(".overlay-box3").fadeOut();
-            $(".mo-nav .currency-list").slideUp(300);
-        });
-    }
+    // if ($(window).width() <= 991) {
+
+    // }
+    // if ($(window).width() <= 991) {
+
+    // }
 
     if ($(window).width() <= 991) {
         $(".sub-menu .nav-link").click(function() {
@@ -257,6 +239,7 @@ $(document).ready(function() {
             $(this).siblings(".sub-list").slideToggle(300);
         });
     }
+
     if ($(window).width() <= 991) {
         $(".sub-sub-menu .sub-link").click(function() {
             $(this).toggleClass("rotate")
@@ -264,4 +247,10 @@ $(document).ready(function() {
         });
     }
 
+    if ($(window).width() <= 991) {
+        $(".tools-box .nav-link").click(function() {
+            $(this).toggleClass("rotate")
+            $(this).siblings(".lang-list,.currency-list").slideToggle(300);
+        });
+    }
 });
